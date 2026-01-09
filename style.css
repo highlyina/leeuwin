@@ -12,6 +12,7 @@ html {
   margin: -10px 15px;
   padding: 0;
   color: red;
+  width: 100%;
 }
 
 a:link {
