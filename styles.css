@@ -1,7 +1,7 @@
 @font-face {
     font-family: "General Sans Variable", sans-serif;
-    src: url("./fonts/GeneralSans-Variable.woff2") format("woff2-variations");
-    src: url("./fonts/GeneralSans-Variable.woff2") format("woff2") tech("variations");
+    src: url(./fonts/GeneralSans-Variable.woff2) format("woff2-variations");
+    src: url(./fonts/GeneralSans-Variable.woff2) format("woff2") tech("variations");
     font-style: normal;
     font-weight: 200 700;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: "General Sans Variable Italic", sans-serif;
-    src: url("./fonts/GeneralSans-VariableItalic.woff2") format("woff2-variations");
-    src: url("./fonts/GeneralSans-VariableItalic.woff2") format("woff2") tech("variations");
+    src: url(./fonts/GeneralSans-VariableItalic.woff2) format("woff2-variations");
+    src: url(./fonts/GeneralSans-VariableItalic.woff2) format("woff2") tech("variations");
     font-style: italic;
     font-weight: 200 700;
     font-display: swap;
