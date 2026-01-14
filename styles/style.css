@@ -58,11 +58,10 @@ h1 i:hover{
 .headerLinks a:hover {font-weight: 700; letter-spacing: .2pt;}
 
 @media screen and (max-width: 768px){
-	h1 {font-size: 6vw;}
+	h1 {font-size: 28pt;}
 	.projectContainer {flex-direction: column;}
 	header {padding-left: 0;}
 	.projectSlideshow {height: 62vw;}
-	:root {font-size: calc(2vw + 1vh + .5vmin);}
 }
 
 .projectContainer {
