@@ -1,4 +1,3 @@
-/* img slideshow */
 let slideIndex = [1,1,1,1,1];
 let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5"]
 showSlides(1, 0);
@@ -21,5 +20,3 @@ function showSlides(n, no) {
   }
   x[slideIndex[no]-1].style.display = "block";  
 }
-/* /img slideshow */
-/* I still have no idea how javascript works and at this point I'm too afraid to ask */
