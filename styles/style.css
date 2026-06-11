@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "General Sans Variable";
+	src: url("../assets/fonts/GeneralSans-Variable.woff2") format("woff2-variations");
+	src: url("../assets/fonts/GeneralSans-Variable.woff2") format("woff2") tech("variations");
+    font-style: normal;
+    font-weight: 200 700;
+}
+
+@font-face {
+    font-family: "General Sans Variable Italic";
+	src: url("../assets/fonts/GeneralSans-VariableItalic.woff2") format("woff2-variations");
+	src: url("../assets/fonts/GeneralSans-VariableItalic.woff2") format("woff2") tech("variations");
+    font-style: italic;
+    font-weight: 200 700;
+}
+
+@font-face {
+	font-family: "Heal the Web A";
+	src: url("../assets/fonts/HealTheWebA-Regular.otf");
+	font-style: normal;
+}
+
+/* general formatting */
+* {
+	box-sizing: border-box;
+	font-family: "General Sans Variable";
+	font-weight: 440;
+	line-height: 125%;
+	color: #ffffff;
+	margin: 0;
+}
+
+html {scroll-behavior: smooth;}
+body {padding: 20px 0; background-color: #101010;}
+header, footer, #projectStart, #acknowledgement, .about {padding: 0 20px;}
+
+/* text formatting */
+i {font-family: "General Sans Variable Italic";}
+a {text-decoration: none; transition: ease .1s;}
+p + p {margin-top: 10px;} /* paragraph spacing */
+a:hover {filter: blur(3px);} /* link hover effect */
+
+/* remove default button style */
+button {background-color: transparent; border-style: none; outline-style: none; mix-blend-mode: exclusion; cursor: pointer;}
+
+/* horizontal rule */
+hr {height: 0px; border: none; border-top: 1px solid gray;}
+
+/* navbar */
+.navLinks {display: flex; gap: 15px;}
+
+nav {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	padding: 30px;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	mix-blend-mode: exclusion;
+}
+
+/* header */
+header {
+	padding-top: 40vh;
+	align-items: flex-end;
+	justify-content: center;
+	display: flex;
+	width: 100%;
+	margin-top: 70px;
+	margin-bottom: 100px;
+}
+
+#glVert, #glHori {width: 100%;} /* header title */
+
+#glHori {display: none;} /* hide desktop version */
+
+/* footer */
+footer {
+	padding-top: 100px;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+}
+
+/* project section formatting*/
+.project {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	margin: 100px 0; /* spacing between projects */
+}
+
+.projectInfo {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+}
+
+.glide__slide img {width: 100%;}
+
+/* carousel arrow formatting */
+.glide__arrows svg {
+	width: 30px;
+	height: 30px;
+	stroke: #ffffff;
+	stroke-width: 1;
+	stroke-linecap: round;
+	stroke-linejoin: miter;
+	fill: none;
+}
+
+/* carousel arrow positioning */
+.glide__arrows {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: space-between; /* space between arrows; position on each side of carousel */
+}
+
+/* project tags formatting */
+.projectTag {
+	padding: 5px 12px;
+	font-size: 9pt;
+	border-radius: 100pt;
+	border: 1px solid #ffffff;
+}
+
+/* project tags positioning */
+.projectTagContainer {
+	display: flex;
+	gap: 10px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+/* marquee */
+.marqueeWrapper {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.marquee {
+	overflow: hidden;
+	display: flex;
+	background-color: white;
+}
+
+.marquee h2 {
+	white-space: nowrap;
+	text-transform: uppercase;
+	font-family: "Heal the Web A";
+	color: #101010;
+	padding-top: 5px;
+}
+
+/* about page */
+.about {
+	min-height: 70vh;
+	width: 100%;
+	margin-top: 40vh;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.aboutSideLinks {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	padding-bottom: 10px;
+}
+
+.aboutSideLinks small {color: gray;}
+
+.aboutSide {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.aboutMain {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.aboutTitle h1, .aboutTitle span {
+	font-family: "Heal the Web A";
+	font-size: 32pt;
+}
+
+@media screen and (max-width: 599px){}
+@media screen and (min-width: 600px){}
+@media screen and (min-width: 900px){
+	
+	.projectInfo, footer {flex-direction: row; justify-content: space-between;}
+	
+	.projectDescription {width: 40%;}
+	
+	/* adjust about section */
+	.about {flex-direction: row;}
+	.aboutSide {min-width: 21%;}
+	#aboutSideRight {order: 2;}
+	.aboutMain {order: 1;}
+}
+
+@media screen and (min-width: 1200px){
+	
+	/* header title */
+	#glVert {display: none;} /* hide mobile version */
+	#glHori {display: block;} /* display desktop version */
+	header {padding-top: 48vh;} /* adjust padding to account for vertical title */
+}
