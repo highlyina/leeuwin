@@ -1,0 +1,22 @@
+@charset "utf-8";
+*, *::before, *::after {box-sizing: border-box;}
+*:not(dialog) {margin: 0;}
+html {-moz-text-size-adjust: none;-webkit-text-size-adjust: none;text-size-adjust: none;-webkit-font-smoothing: antialiased; scroll-behavior: smooth;}
+body {line-height: 1.5;}
+h1, h2, h3, h4, button, input, label {line-height: 1.22;}
+img, svg {display: block;max-width: 100%;}
+p, h1, h2, h3, h4, h5, h6 {overflow-wrap: break-word;}
+p {text-wrap: pretty;line-height: 1.4;}
+h1, h2, h3, h4, h5, h6 {text-wrap: balance;}
+input, button, textarea, select {font: inherit;}
+ol, ul {list-style: none;}
+button {
+	background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  font: inherit;
+  border-radius: 0;
+  appearance: none;
+	cursor: pointer;}/*remove default button style */

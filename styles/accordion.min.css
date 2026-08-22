@@ -1,0 +1,14 @@
+/**
+ * Accordion v3.4.1
+ * Lightweight and accessible accordion module created in pure Javascript
+ * https://github.com/michu2k/Accordion
+ *
+ * Copyright (c) Michał Strumpf
+ * Published under MIT License
+ */
+.ac .ac-trigger{text-align:left;width:100%;cursor:pointer;position:relative;text-decoration:none;}
+.ac .ac-trigger::after{content:"+";text-align:center;transform:translate(0,-50%);position:absolute;right:10px;top:50%}
+.ac .ac-panel{overflow:hidden;transition-property:height,visibility;transition-timing-function:ease}
+.ac.js-enabled .ac-panel{visibility:hidden}
+.ac.is-active .ac-panel{visibility:visible}
+.ac.is-active>.ac-header .ac-trigger::after{content:"\2013"}

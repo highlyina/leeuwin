@@ -1,4 +1,3 @@
-// JavaScript Document
 function Marquee(selector, speed) {
   const parentSelector = document.querySelector(selector);
   const clone = parentSelector.innerHTML;

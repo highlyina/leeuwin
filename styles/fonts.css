@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "DM Sans";
+	src: url("../fonts/DMSans[opsz,wght].woff2")format("woff2-variations");
+	src: url("../fonts/DMSans[opsz,wght].woff2") format("woff2") tech("variations");
+    font-style: normal;
+	font-variation-settings: "wght" 200 800, "opsz" 9 40;
+	font-optical-sizing: auto;
+}
+
+@font-face {
+    font-family: "DM Sans Italic";
+	src: url("../fonts/DMSans-Italic[opsz,wght].woff2") format("woff2-variations");
+	src: url("../fonts/DMSans-Italic[opsz,wght].woff2") format("woff2") tech("variations");
+    font-style: italic;
+	font-variation-settings: "wght" 200 800, "opsz" 9 40;
+	font-optical-sizing: auto;
+}
+
+@font-face {
+    font-family: "Bricolage Grotesque";
+	src: url("../fonts/BricolageGrotesque[opsz,wdth,wght].woff2") format("woff2-variations");
+	src: url("../fonts/BricolageGrotesque[opsz,wdth,wght].woff2") tech("variations");
+    font-style: italic;
+	font-variation-settings: "opsz" 12 96, "wdth" 75 100, "wght" 100 1000;
+	font-optical-sizing: auto;
+}
+
+@font-face {
+    font-family: "DM Mono";
+	src: url("../fonts/DMMono-Light.woff2") format("woff2");
+    font-style: normal;
+	font-weight: 300;
+}

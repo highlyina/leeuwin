@@ -5,223 +5,180 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<meta name="robots" content="index, follow">
 	<meta name="author" content="Georgina Leeuwendal"/>
 	<meta name="Description" content="Georgina Leeuwendal is a Brisbane-based graphic designer and final-year Visual Communication Design student at QCAD, Griffith University.">
 	<title>Georgina Leeuwendal</title>
 	<!-- styles etc -->
 	<link rel="icon" type="image/x-icon" href="leeuwin.ico">
+	<link rel="stylesheet" type="text/css" href="styles/reset.css">
+	<link rel="stylesheet" type="text/css" href="styles/fonts.css">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
-	<link rel="stylesheet" href="styles/glide.core.min.css">
-	</head>
+	<link rel="stylesheet" type="text/css" href="styles/glide.core.min.css">
+</head>
 <body>
-	<main>
-		<nav>
-			<a href="#projectStart">WORK</a>
-			<a href="about.html">ABOUT</a>
-		</nav>
-		<header><div id="glVert"><img src="assets/glVert.svg" alt=""></div><div id="glHori"><img src="assets/glHori.svg" alt=""></div></header>
-		<div class="marqueeWrapper">
-			    <div class="marquee"><h2>&nbsp; 🖥️ graphic design ✒️ digital media ⚜️ fantasy ⚔️ visual storytelling 🏰 creative direction 🖼️ internet culture 🌐 critical AI ✨ ethical technology 🌏 UX/UI</h2></div>
+<main>
+	<div id="nav__overlay">
+		<div class="flex flex--justify-end"><a href="javascript:void(0)" onclick="closeNav()"><img src="img/close.svg" alt=""></a></div>
+		<div class="flex flex--column padding-tb--large">
+			<a class="flex--auto btn btn--blood text--align-center" href="javascript:void(0)" onclick="scrollToProjects()"><h3>Work</h3></a>
+			<a class="flex--auto btn btn--candy text--align-center" href="about/index.html"><h3>About</h3></a>
+			<a class="flex--auto btn btn--mint text--align-center" href="#contact" onclick="scrollToContact()"><h3>Contact</h3></a>
 		</div>
-		<div id="projectStart">
-		<hr>
-		<!-- worry box -->
-		<section class="project">
-			<div class="projectSlides">
-				<div class="glide">
-					<div class="glide__track" data-glide-el="track">
-						<ul class="glide__slides">
-							<li class="glide__slide"><img src="assets/images/worrybox/wb1.jpg" alt=""></li>
-							<li class="glide__slide"><img src="assets/images/worrybox/wb3.jpg" alt=""></li>
-							<li class="glide__slide"><img src="assets/images/worrybox/wb2.jpg" alt=""></li>
-							<li class="glide__slide"><img src="assets/images/worrybox/wb4.jpg" alt=""></li>
-							<li class="glide__slide"><img src="assets/images/worrybox/wb5.jpg" alt=""></li>
-							<li class="glide__slide"><img src="assets/images/worrybox/wb6.jpg" alt=""></li>
-						</ul>
-						<div class="glide__arrows" data-glide-el="controls">
-							<button class="glide__arrow glide__arrow--left" data-glide-dir="<"><svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="chevronLeftIconTitle"><title id="chevronLeftIconTitle">Chevron Left</title><polyline points="14 18 8 12 14 6 14 6"></polyline></svg></button>
-							<button class="glide__arrow glide__arrow--right" data-glide-dir=">"><svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="chevronRightIconTitle"><title id="chevronRightIconTitle">Chevron Right</title><polyline points="10 6 16 12 10 18 10 18"></polyline></svg></button>
-						</div>
-					</div>
+	</div>
+	<nav id="navbar">
+		<div class="flex flex--auto"><a href=""><img src="img/G3.svg" alt=""></a></div>
+		<div class="nav__burgir"><a href="javascript:void(0)" onclick="openNav()"><img src="img/hamburger.svg" alt=""></a></div>
+		<div class="flex flex--basis-30">
+			<a class="flex--auto btn btn--blood" href="#projects">Work</a>
+			<a class="flex--auto btn btn--candy" href="about/index.html">About</a>
+			<a class="flex--auto btn btn--mint" href="#contact">Contact</a>
+		</div>
+	</nav>
+	<header class="header-main">
+		<h1 class="display text--align-center">Brisbane-based designer specialising in visual communication, branding and typography.</h1>
+	</header>
+	<hr>
+	<section id="projects">
+		<!------ worry box ------>
+		<article class="flex__main flex--responsive-column">
+			<div class="glide flex--auto">
+				<div class="glide__track" data-glide-el="track">
+					<ul class="glide__slides">
+						<li class="glide__slide"><img src="img/wb1.webp" alt=""></li>
+						<li class="glide__slide"><img src="img/wb2.webp" alt=""></li>
+						<li class="glide__slide"><img src="img/wb3.webp" alt=""></li>
+						<li class="glide__slide"><img src="img/wb4.webp" alt="" loading="lazy"></li>
+					</ul>
+				</div>
+				<div class="glide__arrows" data-glide-el="controls">
+					<button class="glide__arrow glide__arrow--left" data-glide-dir="<">←</button>
+					<button class="glide__arrow glide__arrow--right" data-glide-dir=">">→</button>
 				</div>
 			</div>
 			
-			<div class="projectInfo">
-				<div class="projectTitle">
-					<small>2026</small>
+			<aside class="flex flex--column flex--gap-small flex--basis-40">
+				<div>
 					<h3>Worry Box</h3>
-					<div class="projectTagContainer"><span class="projectTag">Mobile app</span><span class="projectTag">UX/UI</span><span class="projectTag">Identity</span></div>
+					<p><small class="tag">App prototype, UX/UI, brand identity</small></p>
 				</div>
-				<div class="projectDescription">
-					<p><i>Worry Box</i> is a mobile app designed to help users manage their anxiety. Based on the principles of Cognitive Behavioural Therapy (CBT), the app allows users to set aside their worries in a safe and contained space.</p><p><i>Worry Box</i> was developed for a university assignment, with the goal of improving an everyday experience for a single individual. The design process involved identifying a problem through exploratory ethnographic research, developing and testing a solution, and creating a digital prototype.</p>
-				</div>
-			</div>
-		</section>
+				<p>Anxiety management app that adapts the Cognitive Behavioural Therapy (CBT) ‘worry box’ technique.</p>
+				<div class="padding-tb--small"><a class="btn btn__default btn--blood" href="projects/worrybox/index.html">Full project →</a></div>
+			</aside>
+		</article>
 		<hr>
-		<!-- entropy -->
-		<section class="project">
-			<div class="projectSlides">
-				<div class="glide">
-					<div class="glide__track" data-glide-el="track">
-						<ul class="glide__slides">
-							<li class="glide__slide"><img src="assets/images/entropy/entropy2.jpg" alt=""></li>
-							<li class="glide__slide"><img src="assets/images/entropy/entropy1.jpg" alt=""></li>
-							<li class="glide__slide"><img src="assets/images/entropy/entropy3.jpg" alt=""></li>
-							<li class="glide__slide"><img src="assets/images/entropy/entropy4.gif" alt=""></li>
-							<li class="glide__slide"><img src="assets/images/entropy/entropy5.jpg" alt=""></li>
-							<li class="glide__slide"><img src="assets/images/entropy/entropy6.jpg" alt=""></li>
-						</ul>
-						<div class="glide__arrows" data-glide-el="controls">
-							<button class="glide__arrow glide__arrow--left" data-glide-dir="<"><svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="chevronLeftIconTitle"><polyline points="14 18 8 12 14 6 14 6"></polyline></svg></button>
-							<button class="glide__arrow glide__arrow--right" data-glide-dir=">"><svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="chevronRightIconTitle"><polyline points="10 6 16 12 10 18 10 18"></polyline></svg></button>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="projectInfo">
-				<div class="projectTitle">
-					<small>2025</small>
+		<!------ entropy ------>
+		<article class="flex__main flex--responsive-column">
+			<aside class="flex flex--column flex--gap-small flex--basis-40 order__mobile--2">
+				<div>
 					<h3>Entropy</h3>
-					<div class="projectTagContainer"><span class="projectTag">Typeface design</span></div>
+					<p><small class="tag">Typeface</small></p>
 				</div>
-				<div class="projectDescription">
-					<p><i>Entropy</i> is a monospace display typeface inspired by ‘old-computer’ style fonts such as <i>Westminster</i>, <i>Data-70</i> and <i>Amelia</i>. It blends organic, rounded forms with underlying geometry reminiscent of mechanical infrastructure.</p>
-					<p><i>Entropy</i> is intended to raise questions about the role of technology in our lives and how it has reshaped our perception of reality. Designed for a university assignment over the course of nine weeks.</p>
+				<p>Display typeface inspired by the concept of ‘entropy’ — the natural tendency toward disorder.</p>
+				<div class="padding-tb--small"><a class="btn btn__default btn--blood" href="projects/entropy/index.html">Full project →</a></div>
+			</aside>
+			<div class="glide flex--auto">
+				<div class="glide__track" data-glide-el="track">
+					<ul class="glide__slides">
+						<li class="glide__slide"><img src="img/entropy1.webp" alt=""></li>
+						<li class="glide__slide"><img src="img/entropy2.webp" alt=""></li>
+						<li class="glide__slide"><img src="img/entropy3.webp" alt=""></li>
+						<li class="glide__slide"><img src="img/entropy4.gif" alt="" loading="lazy"></li>
+					</ul>
 				</div>
-			</div>
-		</section>
-		<hr>
-		<!-- baron -->
-		<section class="project">
-			<div class="projectSlides">
-				<div class="glide">
-					<div class="glide__track" data-glide-el="track">
-						<ul class="glide__slides">
-							<li class="glide__slide"><img src="assets/images/baron/baron4.jpg" alt=""></li>
-							<li class="glide__slide"><img src="assets/images/baron/baron3.jpg" alt=""></li>
-							<li class="glide__slide"><img src="assets/images/baron/curse.jpg" alt=""></li>
-							<li class="glide__slide"><img src="assets/images/baron/conjure.jpg" alt=""></li>
-							<li class="glide__slide"><img src="assets/images/baron/conquer.jpg" alt=""></li>
-							<li class="glide__slide"><img src="assets/images/baron/baron5.jpg" alt=""></li>
-							<li class="glide__slide"><img src="assets/images/baron/baron6.jpg" alt=""></li>
-							<li class="glide__slide"><img src="assets/images/baron/baron1.jpg" alt=""></li>
-						</ul>
-						<div class="glide__arrows" data-glide-el="controls">
-							<button class="glide__arrow glide__arrow--left" data-glide-dir="<"><svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="chevronLeftIconTitle"><polyline points="14 18 8 12 14 6 14 6"></polyline></svg></button>
-							<button class="glide__arrow glide__arrow--right" data-glide-dir=">"><svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="chevronRightIconTitle"><polyline points="10 6 16 12 10 18 10 18"></polyline></svg></button>
-						</div>
-					</div>
+				<div class="glide__arrows" data-glide-el="controls">
+					<button class="glide__arrow glide__arrow--left" data-glide-dir="<">←</button>
+					<button class="glide__arrow glide__arrow--right" data-glide-dir=">">→</button>
 				</div>
 			</div>
 			
-			<div class="projectInfo">
-				<div class="projectTitle">
-					<small>2025</small>
+		</article>
+		<hr>
+		<!------ atypi ------>
+		<article class="flex__main flex--responsive-column">
+			<div class="glide flex--auto">
+				<div class="glide__track" data-glide-el="track">
+					<ul class="glide__slides">
+						<li class="glide__slide"><img src="img/atypi1.webp" alt=""></li>
+						<li class="glide__slide"><img src="img/atypi2.webp" alt=""></li>
+						<li class="glide__slide"><img src="img/atypi3.webp" alt=""></li>
+						<li class="glide__slide"><img src="img/atypi6.webp" alt="" loading="lazy"></li>
+					</ul>
+				</div>
+				<div class="glide__arrows" data-glide-el="controls">
+					<button class="glide__arrow glide__arrow--left" data-glide-dir="<">←</button>
+					<button class="glide__arrow glide__arrow--right" data-glide-dir=">">→</button>
+				</div>
+			</div>
+			<aside class="flex flex--column flex--gap-small flex--basis-40">
+				<div>
+					<h3>ATypI Brisbane 2024</h3>
+					<p><small class="tag">Brand identity</small></p>
+				</div>
+				<p>Shortlisted identity concept for the 2024 Association Typographique Internationale (ATypI) conference.</p>
+				<div class="padding-tb--small"><a class="btn btn__default btn--blood" href="projects/atypi24/index.html">Full project →</a></div>
+			</aside>
+		</article>
+		<hr>
+		<!------ broodbaron ------>
+		<article class="flex__main flex--responsive-column">
+			<aside class="flex flex--column flex--gap-small flex--basis-40 order__mobile--2">
+				<div>
 					<h3>Brood &amp; Baron</h3>
-					<div class="projectTagContainer"><span class="projectTag">Brand identity</span><span class="projectTag">Lettering</span></div>
+					<p><small class="tag">Brand identity, product range</small></p>
 				</div>
-				<div class="projectDescription">
-					<p><i>Brood &amp; Baron</i> is a conceptual home décor brand created for a university assignment.</p>
-					<p>Inspired by fantasy and folklore, <i>Brood &amp; Baron</i> aims to encourage slow, thoughtful consumption of artisan goods and the value of individuality in the face of corporate uniformity.</p>
-					<p>The <i>Curse, Conjure, Conquer</i> banners (a play on the infamous <i>Live Laugh Love</i> phrase) are hand-painted and sewed by myself using fabric off-cuts and recycled materials.</p>
+				<p>Conceptual home décor brand that addresses textile waste in Australia.</p>
+				<div class="padding-tb--small"><a class="btn btn__default btn--blood" href="projects/broodbaron/index.html">Full project →</a></div>
+			</aside>
+			<div class="glide flex--auto">
+				<div class="glide__track" data-glide-el="track">
+					<ul class="glide__slides">
+						<li class="glide__slide"><img src="img/bb1.webp" alt=""></li>
+						<li class="glide__slide"><img src="img/bb2.webp" alt=""></li>
+						<li class="glide__slide"><img src="img/bb3.webp" alt=""></li>
+					</ul>
 				</div>
-			</div>
-		</section>
-		<hr>
-		<!-- atypi -->
-		<section class="project">
-			<div class="projectSlides">
-				<div class="glide">
-					<div class="glide__track" data-glide-el="track">
-						<ul class="glide__slides">
-							<li class="glide__slide"><img src="assets/images/atypi/atypi1.jpg" alt=""></li>
-							<li class="glide__slide"><img src="assets/images/atypi/atypi2.jpg" alt=""></li>
-							<li class="glide__slide"><img src="assets/images/atypi/atypi3.jpg" alt=""></li>
-							<li class="glide__slide"><img src="assets/images/atypi/atypi7.jpg" alt=""></li>
-							<li class="glide__slide"><img src="assets/images/atypi/atypi6.jpg" alt=""></li>
-							<li class="glide__slide"><img src="assets/images/atypi/atypi8.jpg" alt=""></li>
-						</ul>
-						<div class="glide__arrows" data-glide-el="controls">
-							<button class="glide__arrow glide__arrow--left" data-glide-dir="<"><svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="chevronLeftIconTitle"><polyline points="14 18 8 12 14 6 14 6"></polyline></svg></button>
-							<button class="glide__arrow glide__arrow--right" data-glide-dir=">"><svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="chevronRightIconTitle"><polyline points="10 6 16 12 10 18 10 18"></polyline></svg></button>
-						</div>
-					</div>
+				<div class="glide__arrows" data-glide-el="controls">
+					<button class="glide__arrow glide__arrow--left" data-glide-dir="<">←</button>
+					<button class="glide__arrow glide__arrow--right" data-glide-dir=">">→</button>
 				</div>
 			</div>
-			
-			<div class="projectInfo">
-				<div class="projectTitle">
-					<small>2024</small>
-					<h3>ATypI Brisbane 24</h3>
-					<div class="projectTagContainer"><span class="projectTag">Brand identity</span></div>
-				</div>
-				<div class="projectDescription">
-					<p>Shortlisted brand identity concept for the 2024 annual ATypI conference, which took place in Brisbane, QLD.</p>
-				</div>
+		</article>
+	</section>
+	<footer class="bg--blk">
+		<div class="padding-tb--reg"></div>
+	<section id="contact" class="flex__main">
+		<a href="mailto:georginaleeuwendal@gmail.com" class="flex__main flex--auto flex--justify-center">Let's talk!</a>
+	</section>
+		<div class="flex__main flex--responsive-column">
+			<div class="flex--auto">
+				<p><small class="color--hwite">© 2026 Georgina Leeuwendal. All rights reserved.</small></p>
+				<p><small class="color--hwite">Last updated → August 2026</small></p>
 			</div>
-		</section>
-		<hr>
-		<!-- thoughts -->
-		<section class="project">
-			<div class="projectSlides">
-				<div class="glide">
-					<div class="glide__track" data-glide-el="track">
-						<ul class="glide__slides">
-							<li class="glide__slide"><img src="assets/images/thoughts/thoughts1.gif" alt=""></li>
-							<li class="glide__slide"><img src="assets/images/thoughts/thoughts2.jpg" alt=""></li>
-							<li class="glide__slide"><img src="assets/images/thoughts/thoughts3.jpg" alt=""></li>
-							<li class="glide__slide"><img src="assets/images/thoughts/thoughts4.jpg" alt=""></li>
-							<li class="glide__slide"><img src="assets/images/thoughts/thoughts5.jpg" alt=""></li>
-						</ul>
-						<div class="glide__arrows" data-glide-el="controls">
-							<button class="glide__arrow glide__arrow--left" data-glide-dir="<"><svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="chevronLeftIconTitle"><polyline points="14 18 8 12 14 6 14 6"></polyline></svg></button>
-							<button class="glide__arrow glide__arrow--right" data-glide-dir=">"><svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="chevronRightIconTitle"><polyline points="10 6 16 12 10 18 10 18"></polyline></svg></button>
-						</div>
-					</div>
-				</div>
+			<div class="flex--auto text--align-right">
+				<div class="flex__inline flex--gap-xsmall">
+					<a href="https://www.are.na/g-like-the-letter" target="_blank"><img src="img/logo-arena.svg" alt=""></a>
+					<a href="https://www.instagram.com/leeuwin.work/" target="_blank"><img src="img/logo-instagram.svg" alt=""></a>
+					<a href="https://www.behance.net/georginaleeuwendal" target="_blank"><img src="img/logo-behance.svg" alt=""></a>
+					<a href="https://www.linkedin.com/in/georgina-leeuwendal-592001191/" target="_blank"><img src="img/logo-linkedin.svg" alt=""></a>
+				</div><br>
+				<a class="color--hwite" href="mailto:georginaleeuwendal@gmail.com" style="text-decoration: underline;"><p><small class="color--hwite">georginaleeuwendal@gmail.com</small></p></a>
 			</div>
-			
-			<div class="projectInfo">
-				<div class="projectTitle">
-					<small>2024</small>
-					<h3>Thoughts on Typography and Layout</h3>
-					<div class="projectTagContainer"><span class="projectTag">Publication design</span></div>
-				</div>
-				<div class="projectDescription">
-					<p><i>Thoughts on Typography and Layout</i> is a university project designed to provide students with a practical learning experience in typeface selections, page layouts, type setting, and print preparation.</p>
-					<p> The booklet contains a collection of short essays and extracts by acclaimed design writers Ellen Lupton, David Frej, Katherine McCoy, Josef Müller-Brockmann, and Beatrice Warde.</p>
-				</div>
-			</div>
-		</section>
 		</div>
-		<footer>
-			<small>© 2026 Georgina Leeuwendal. All rights reserved.</small>
-			<small><a href="mailto:georginaleeuwendal@gmail.com" style="word-wrap: break-word;text-decoration: underline;">georginaleeuwendal@gmail.com</a></small>
-			<div><small>Last updated → June 2026<br>Website designed and coded by myself❤️</small></div>
-		</footer>
-		<div id="acknowledgement">
-		<small>I acknowledge the traditional custodians of the land in which I live and work, the Jagera and Turrbal people, and pay my respects to all First Nations people including Elders past, present and emerging.</small>
-		</div>
-	</main>
+	</footer>
+</main>
 	<!-- scripts -->
-	<script type="text/javascript" src="scripts/marquee.js"></script>
+	<script type="text/javascript" src="scripts/navbar.js"></script>
+	<!------ carousels ------>
 	<script type="text/javascript" src="scripts/glide.min.js"></script>
 	<script>
 		var sliders = document.querySelectorAll('.glide');
 		for (var i = 0; i < sliders.length; i++) {
 			var glide = new Glide(sliders[i], {
-				type: 'carousel',
 				gap: 0,
-				peak: 50,
-				breakpoints: {
-					10000: {perView: 2},
-					900: {perView: 1}
-				}
+				type: 'carousel',
 			});
 			glide.mount();
 		}
 	</script>
-</body>
+	</body>
 </html>
