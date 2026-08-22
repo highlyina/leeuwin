@@ -14,7 +14,6 @@
 	
 	/* type */
 	--font-size--arrow: 7rem;
-	
 	--p: 1.125rem;
 }
 
@@ -77,9 +76,7 @@ nav {
 	transition: 0.5s;
 }
 
-.header-main {
-	padding: calc(var(--gap-large)*2) var(--gap);
-}
+.header-main {padding: calc(var(--gap-large)*2) var(--gap);}
 
 #contact a {
 	background-image: url("../img/contact.svg");
@@ -91,9 +88,7 @@ nav {
 	font-family: "Bricolage Grotesque";font-variation-settings: "wdth" 92, "opsz" 85, "wght" 450;
 }
 
-#contact a:hover {
-	background-image: url("../img/contactHover.svg");
-}
+#contact a:hover {background-image: url("../img/contactHover.svg");}
 
 #pfp {
 	background-image: url("../img/pfpbw.webp");
