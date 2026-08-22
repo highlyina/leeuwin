@@ -14,6 +14,7 @@
 	
 	/* type */
 	--font-size--arrow: 7rem;
+	--font-size--glide-arrows: 5.5rem;
 	--p: 1.125rem;
 }
 
@@ -222,6 +223,11 @@ nav {
 .ac-text {padding-top: calc(var(--gap)/2);}
 
 @media screen and (max-width: 1024px){
+	:root {
+		--p: 1rem;
+		--gap: 2rem;
+		--font-size--glide-arrows: 4.5rem;
+	}
 	.flex--responsive-column {flex-direction: column;}
 	nav div:last-of-type {display: none;}
 	.nav__burgir {display: flex;}
@@ -240,6 +246,7 @@ nav {
 	:root {
 		--p: 1rem;
 		--gap: 2rem;
+		--font-size--glide-arrows: 3rem;
 	}
 	.display, h1, .display__sans {font-size: 3rem;}
 	#contact a {font-size: 2rem;}
