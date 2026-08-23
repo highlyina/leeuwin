@@ -229,8 +229,6 @@ nav {
 
 @media screen and (max-width: 1024px){
 	:root {
-		--p: 1rem;
-		--gap: 2rem;
 		--font-size--glide-arrows: 4.5rem;
 	}
 	.flex--responsive-column {flex-direction: column;}
