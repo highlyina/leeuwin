@@ -21,7 +21,7 @@
 /* # gen stuff */
 * {color: var(--glblk); font-family: "DM Sans"; font-variation-settings: "wght" 450; font-feature-settings: 'ss03', 'ss05';}
 html {scroll-behavior: smooth; background-color: var(--glhwite);}
-main {margin-top: calc(var(--gap)*2.7)}
+main {margin-top: calc(var(--gap)*2.6)}
 hr {height: 0; border: none; border-top: 1px solid var(--glblk);}
 img {width:100%;}
 
@@ -35,13 +35,14 @@ h6 {font-size: calc(var(--p)*1.1);}
 p {font-size: var(--p);}
 a {text-decoration: none;}
 i {font-family: "DM Sans Italic"; font-variation-settings: "wght" inherit;}
-p + p, h2 + p, h1 + p {margin: 0.8rem 0;}
+p + p, h2 + p, h1 + p, p + h1 {margin: 0.8rem 0;}
 
 /* ## text styles */
 .display {font-size: calc(var(--p)*4.35); font-family: "Bricolage Grotesque";font-variation-settings: "wdth" 92, "opsz" 85, "wght" 500;line-height: 1;}
 .display__sans {font-size: calc(var(--p)*3.35); font-family: "DM Sans"}
 .eyebrow {font-family: "DM Mono"; text-transform: uppercase;}
 .tag {font-family: "DM Mono";}
+.glyph {font-family: "Heal the Web A" !important; font-size: inherit;}
 .p-large {
 	font-size: calc(var(--p)*1.28);
 	font-variation-settings: "wght" 370;
@@ -163,6 +164,10 @@ nav {
 .bg--candy {background-color: var(--glcandy);}
 
 .color--hwite {color: var(--glhwite);}
+.color--blood {color: var(--glblood); font: inherit;}
+.color--candy {color: var(--glcandy); font: inherit;}
+.color--sky {color: var(--glsky); font: inherit;}
+.color--mint {color: var(--glmint); font: inherit;}
 
 /* ## text */
 .text--align-center {text-align: center;}
@@ -239,15 +244,18 @@ nav {
 		padding-bottom: 10rem;
 	}
 	#contact a:hover {background-image: url("../img/contactsmallHover.svg");}
-	
 }
 
 @media (max-width: 480px) {
 	:root {
 		--p: 1rem;
-		--gap: 2rem;
+		--gap: 1.5rem;
 		--font-size--glide-arrows: 3rem;
 	}
-	.display, h1, .display__sans {font-size: 3rem;}
+	h1, .display__sans {font-size: 3rem;}
+	.display {font-size: 2.4rem;}
 	#contact a {font-size: 2rem;}
+	.nav--svg {max-height: 40px;}
+	.G {max-height: 30px; margin-top: 5px;}
+	.p-large {font-size: calc(var(--p)*1.1);}
 }

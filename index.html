@@ -1,13 +1,17 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-AU">
 <head>
 	<!-- meta -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="robots" content="index, follow">
 	<meta name="author" content="Georgina Leeuwendal"/>
-	<meta name="Description" content="Georgina Leeuwendal is a Brisbane-based graphic designer and final-year Visual Communication Design student at QCAD, Griffith University.">
+	<meta name="Description" content="Portfolio of Georgina Leeuwendal, a Brisbane-based designer specialising in visual communication, branding and typography.">
 	<title>Georgina Leeuwendal</title>
+	
+	<link rel="canonical" href="https://leeuwin.work/">
+	<meta property="og:url" content="https://leeuwin.work/">
 	<!-- styles etc -->
 	<link rel="icon" type="image/x-icon" href="leeuwin.ico">
 	<link rel="stylesheet" type="text/css" href="styles/reset.css">
@@ -18,7 +22,7 @@
 <body>
 <main>
 	<div id="nav__overlay">
-		<div class="flex flex--justify-end"><a href="javascript:void(0)" onclick="closeNav()"><img src="img/close.svg" alt=""></a></div>
+		<div class="flex flex--justify-end"><a href="javascript:void(0)" onclick="closeNav()"><img class="nav--svg" src="img/close.svg" alt=""></a></div>
 		<div class="flex flex--column padding-tb--large">
 			<a class="flex--auto btn btn--blood text--align-center" href="javascript:void(0)" onclick="scrollToProjects()"><h3>Work</h3></a>
 			<a class="flex--auto btn btn--candy text--align-center" href="about/"><h3>About</h3></a>
@@ -26,8 +30,8 @@
 		</div>
 	</div>
 	<nav id="navbar">
-		<div class="flex flex--auto"><a href=""><img src="img/G3.svg" alt=""></a></div>
-		<div class="nav__burgir"><a href="javascript:void(0)" onclick="openNav()"><img src="img/hamburger.svg" alt=""></a></div>
+		<div class="flex flex--auto"><a href=""><img class="nav--svg G" src="img/G3.svg" alt=""></a></div>
+		<div class="nav__burgir"><a href="javascript:void(0)" onclick="openNav()"><img class="nav--svg" src="img/hamburger.svg" alt=""></a></div>
 		<div class="flex flex--basis-30">
 			<a class="flex--auto btn btn--blood" href="#projects">Work</a>
 			<a class="flex--auto btn btn--candy" href="about/">About</a>
@@ -35,10 +39,11 @@
 		</div>
 	</nav>
 	<header class="header-main">
-		<h1 class="display text--align-center">Brisbane-based designer specialising in visual communication, branding and typography.</h1>
+		<p class="p-large text--align-center"><i>Hello!</i> 👋</p>
+		<h1 class="display text--align-center">I’m Georgina, a designer specialising in <span class="color--blood">visual communication</span>, <span class="color--candy">branding</span> and <span class="color--sky">typography</span> based in Brisbane.</h1>
 	</header>
 	<hr>
-	<section id="projects">
+	<section id="projects" class="padding-tb--reg">
 		<!------ worry box ------>
 		<article class="flex__main flex--responsive-column">
 			<div class="glide flex--auto">
@@ -147,7 +152,7 @@
 	<footer class="bg--blk">
 		<div class="padding-tb--reg"></div>
 	<section id="contact" class="flex__main">
-		<a href="mailto:georginaleeuwendal@gmail.com" class="flex__main flex--auto flex--justify-center">Let's talk!</a>
+		<a href="mailto:georginaleeuwendal@gmail.com" class="flex__main flex--auto flex--justify-center">Let’s talk!</a>
 	</section>
 		<div class="flex__main flex--responsive-column">
 			<div class="flex--auto">
