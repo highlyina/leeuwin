@@ -257,3 +257,7 @@ nav {
 	.G {max-height: 30px; margin-top: 5px;}
 	.p-large {font-size: calc(var(--p)*1.1);}
 }
+
+@media (min-width: 1900px) {
+	.header-main {padding: calc(var(--gap-large)*2) var(--gap-large);}
+}
