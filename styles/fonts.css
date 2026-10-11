@@ -1,6 +1,24 @@
 @charset "utf-8";
 
 @font-face {
+    font-family: "ABC Areal";
+	src: url("../fonts/ABCArealSuperfamilyVariable.woff2") format("woff2-variations");
+	src: url("../fonts/ABCArealSuperfamilyVariable.woff2") tech("variations");
+    font-style: normal;
+	font-variation-settings: "wght" 400 700, "slnt" -12 0, "MONO" 0 100;
+	font-feature-settings: 'ss11' on;
+}
+
+@font-face {
+    font-family: "ABC Areal SemiMono";
+	src: url("../fonts/ABCArealSemiMonoVariable.woff2") format("woff2-variations");
+	src: url("../fonts/ABCArealSemiMonoVariable.woff2") tech("variations");
+    font-style: normal;
+	font-variation-settings: "wght" 400 700, "slnt" -12 0;
+	font-feature-settings: 'ss11' on;
+}
+
+@font-face {
     font-family: "DM Sans";
 	src: url("../fonts/DMSans[opsz,wght].woff2")format("woff2-variations");
 	src: url("../fonts/DMSans[opsz,wght].woff2") format("woff2") tech("variations");

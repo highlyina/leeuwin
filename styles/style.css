@@ -19,37 +19,36 @@
 }
 
 /* # gen stuff */
-* {color: var(--glblk); font-family: "DM Sans"; font-variation-settings: "wght" 450; font-feature-settings: 'ss03', 'ss05';}
+* {color: var(--glblk); font-family: "ABC Areal"; font-variation-settings: "wght" 400;}
 html {scroll-behavior: smooth; background-color: var(--glhwite);}
-main {margin-top: calc(var(--gap)*2.6)}
+main {margin-top: 4.9rem}
 hr {height: 0; border: none; border-top: 1px solid var(--glblk);}
 img {width:100%;}
 
 /* # text formatting */
-h1 {font-size: calc(var(--p)*3.3);}
+h1 {font-size: calc(var(--p)*3.2); letter-spacing: -.08rem;}
 h2 {font-size: calc(var(--p)*2.5);}
-h3 {font-size: calc(var(--p)*2); font-variation-settings: "wght" 400;}
-h4 {font-size: calc(var(--p)*1.8);}
+h3 {font-size: calc(var(--p)*2); letter-spacing: -.042rem;}
+h4 {font-size: calc(var(--p)*1.55);}
 h5 {font-size: calc(var(--p)*1.15);}
 h6 {font-size: calc(var(--p)*1.1);}
 p {font-size: var(--p);}
 a {text-decoration: none;}
-i {font-family: "DM Sans Italic"; font-variation-settings: "wght" inherit;}
-p + p, h2 + p, h1 + p, p + h1 {margin: 0.8rem 0;}
+i {font-variation-settings: "wght" inherit, "slnt" -12;}
+p + p, h2 + p, h1 + p, p + h1, h4 + hr {margin: 0.8rem 0;}
 
 /* ## text styles */
 .display {font-size: calc(var(--p)*4.35); font-family: "Bricolage Grotesque";font-variation-settings: "wdth" 92, "opsz" 85, "wght" 500;line-height: 1;}
-.display__sans {font-size: calc(var(--p)*3.35); font-family: "DM Sans"}
-.eyebrow {font-family: "DM Mono"; text-transform: uppercase;}
-.tag {font-family: "DM Mono";}
+.display__sans {font-size: calc(var(--p)*3.35);}
+.eyebrow {font-family: "ABC Areal SemiMono"; text-transform: uppercase; font-variation-settings: "wght" 520;}
+.tag {font-family: "ABC Areal SemiMono";}
 .glyph {font-family: "Heal the Web A" !important; font-size: inherit;}
 .p-large {
-	font-size: calc(var(--p)*1.28);
-	font-variation-settings: "wght" 370;
+	font-size: calc(var(--p)*1.18);
 }
 
 /* # nav */
-nav a {font-size: calc(var(--p)*1.33); font-variation-settings: "opsz" 85, "wght" 500;padding: calc(var(--gap)/2) 2rem;}
+nav a {font-size: calc(var(--p)*1.33); padding: 1rem 2rem;}
 #nav__overlay a {padding: calc(var(--gap)/2) 2rem;}
 .nav__burgir {display: none;}
 nav a:first-of-type:hover {fill: var(--glblood);} /* *fix this later */
@@ -78,7 +77,28 @@ nav {
 	transition: 0.5s;
 }
 
-.header-main {padding: calc(var(--gap-large)*2) var(--gap);}
+.btn__scrolltotop {
+	position: fixed;
+	z-index: 1;
+	bottom: 2rem;
+	right: 2rem;
+	border: 1px solid var(--glblk);
+	padding: .75rem 1rem;
+	background-color: var(--glhwite);
+}
+
+.btn__scrolltotop:hover {
+	color: #fff;
+	background-color: var(--glblk);
+}
+
+.header-main {
+	padding: calc(var(--gap-large)*2) var(--gap);
+}
+
+.header-main h1 {
+	
+}
 
 #contact a {
 	background-image: url("../img/contact.svg");
@@ -97,7 +117,7 @@ nav {
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
-	min-height: 40rem;
+	min-height: 35rem;
 }
 
 /* # buttons & links */
@@ -135,7 +155,7 @@ nav {
 	overflow: hidden;
 }
 
-.btn__default {
+.btn__default, .btn__inactive {
 	border: 1px solid var(--glblk);
 	padding: .75rem 1rem;
 	text-transform: uppercase;
@@ -172,12 +192,18 @@ nav {
 /* ## text */
 .text--align-center {text-align: center;}
 .text--align-right {text-align: right;}
+.text--wrap-balance {text-wrap: balance;}
+.flex--wrap {flex-wrap: wrap;}
+
+.svg-20 {height: 1.5rem;}
 
 /* ## padding */
 .padding-tb--small {padding-top: calc(var(--gap)/2); padding-bottom: calc(var(--gap)/2);}
 .padding-tb--large {padding-top: var(--gap-large) !important; padding-bottom: var(--gap-large) !important;}
 .padding-tb--reg {padding-top: var(--gap); padding-bottom: var(--gap);}
 
+.width--max-800 {max-width: 800px}
+.width--max-1200 {max-width: 1200px; margin-left: auto; margin-right: auto;}
 .width--min50 {min-width: 50% !important}
 .width--min40 {min-width: 40% !important}
 .width--min30 {min-width: 30% !important}
@@ -242,6 +268,7 @@ nav {
 		padding-bottom: 10rem;
 	}
 	#contact a:hover {background-image: url("../img/contactsmallHover.svg");}
+	#pfp {margin-bottom: var(--gap);}
 }
 
 @media (max-width: 480px) {
@@ -260,4 +287,18 @@ nav {
 
 @media (min-width: 1900px) {
 	.header-main {padding: calc(var(--gap-large)*2) var(--gap-large);}
+}
+
+.marquee {
+	overflow: hidden;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	display: flex;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+}
+
+.marquee h3 {
+	white-space: nowrap;
+	text-transform: uppercase;
 }

@@ -7,10 +7,16 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta name="robots" content="index, follow">
 	<meta name="author" content="Georgina Leeuwendal"/>
-	<meta name="Description" content="Portfolio of Georgina Leeuwendal, a Brisbane-based designer specialising in visual communication, branding and typography.">
+	<meta name="Description" content="Brisbane-based graphic designer specialising in visual communication, branding and typography.">
 	<title>Georgina Leeuwendal</title>
+	<meta name="title" content="Georgina Leeuwendal"/>
 	<link rel="canonical" href="https://leeuwin.work/">
-	<meta property="og:url" content="https://leeuwin.work/">
+	<!-- facebook/open graph -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://leeuwin.work/"/>
+	<meta property="og:title" content="Georgina Leeuwendal"/>
+	<meta property="og:description" content="Brisbane-based graphic designer specialising in visual communication, branding and typography."/>
+	<meta property="og:image" content="https://leeuwin.work/img/thumb.jpg"/>
 	<!-- styles etc -->
 	<link rel="icon" type="image/x-icon" href="leeuwin.ico">
 	<link rel="stylesheet" type="text/css" href="styles/reset.css">
@@ -37,11 +43,14 @@
 			<a class="flex--auto btn btn--mint" href="#contact">Contact</a>
 		</div>
 	</nav>
+	<a class="btn__scrolltotop" id="totop" href="javascript:void(0)" onclick="topFunction()">↑</a>
 	<header class="header-main">
-		<p class="p-large text--align-center"><i>Hello!</i> 👋</p>
-		<h1 class="display text--align-center">I’m Georgina, a designer specialising in <span class="color--blood">visual communication</span>, <span class="color--candy">branding</span> and <span class="color--sky">typography</span> based in Brisbane.</h1>
+		<p class="p-large text--align-center">Hello!👋</p>
+		<h1 class="display text--align-center width--max-1200">I’m Georgina, a designer specialising in <span class="color--blood">visual communication</span>, <span class="color--candy">branding</span> and <span class="color--sky">typography</span> based in Brisbane.</h1>
 	</header>
-	<hr>
+	<div class="marquee">
+		<h3>&emsp;Selected work&emsp;↘&emsp;Selected work&emsp;↘&emsp;Selected work&emsp;↘&emsp;Selected work&emsp;↘</h3>
+	</div>
 	<section id="projects" class="padding-tb--reg">
 		<!------ worry box ------>
 		<article class="flex__main flex--responsive-column">
@@ -147,6 +156,57 @@
 				</div>
 			</div>
 		</article>
+		<hr>
+		<!------ better images of ai ------>
+		<article class="flex__main flex--responsive-column">
+			<div class="glide flex--auto">
+				<div class="glide__track" data-glide-el="track">
+					<ul class="glide__slides">
+						<li class="glide__slide"><img src="img/bioai-pandemonium-1600.webp" alt=""></li>
+						<li class="glide__slide"><img src="img/bioai-soulmate-1600.webp" alt=""></li>
+						<li class="glide__slide"><img src="img/bioai-vanitas-1600.webp" alt="" loading="lazy"></li>
+					</ul>
+				</div>
+				<div class="glide__arrows" data-glide-el="controls">
+					<button class="glide__arrow glide__arrow--left" data-glide-dir="<">←</button>
+					<button class="glide__arrow glide__arrow--right" data-glide-dir=">">→</button>
+				</div>
+			</div>
+			<aside class="flex flex--column flex--gap-small flex--basis-40">
+				<div>
+					<h3>Better Images of AI</h3>
+					<p><small class="tag">Image-making</small></p>
+				</div>
+				<p>Digital artworks created for <a href="https://betterimagesofai.org/" target="_blank" style="text-decoration: underline;">Better Images of AI</a>: “Pandemonium (Stochastic Flock)”, “Build-A-Soulmate”, and “Slop Vanitas”.</p>
+				<div class="padding-tb--small"><a class="btn btn__inactive">Coming soon</a></div>
+			</aside>
+		</article>
+		<hr>
+		<!------ The Protectorate Fanzine ------>
+		<article class="flex__main flex--responsive-column">
+			<aside class="flex flex--column flex--gap-small flex--basis-40 order__mobile--2">
+				<div>
+					<h3>The Protectorate Fanzine</h3>
+					<p><small class="tag">Publication design, critical design</small></p>
+				</div>
+				<p>Speculative zine series that explores the consequences of anti-sex censorship on online fandom spaces.</p>
+				<div class="padding-tb--small"><a class="btn btn__inactive">Coming soon</a></div>
+			</aside>
+			<div class="glide flex--auto">
+				<div class="glide__track" data-glide-el="track">
+					<ul class="glide__slides">
+						<li class="glide__slide"><img src="img/protec1.webp" alt=""></li>
+						<li class="glide__slide"><img src="img/protec2.webp" alt=""></li>
+						<li class="glide__slide"><img src="img/protec3.webp" alt=""></li>
+						<li class="glide__slide"><img src="img/protec4.webp" alt="" loading="lazy"></li>
+					</ul>
+				</div>
+				<div class="glide__arrows" data-glide-el="controls">
+					<button class="glide__arrow glide__arrow--left" data-glide-dir="<">←</button>
+					<button class="glide__arrow glide__arrow--right" data-glide-dir=">">→</button>
+				</div>
+			</div>
+		</article>
 	</section>
 	<footer class="bg--blk">
 		<div class="padding-tb--reg"></div>
@@ -156,7 +216,7 @@
 		<div class="flex__main flex--responsive-column">
 			<div class="flex--auto">
 				<p><small class="color--hwite">© 2026 Georgina Leeuwendal. All rights reserved.</small></p>
-				<p><small class="color--hwite">Last updated → August 2026</small></p>
+				<p><small class="color--hwite">Last updated → October 2026</small></p>
 			</div>
 			<div class="flex--auto text--align-right">
 				<div class="flex__inline flex--gap-xsmall">
@@ -168,10 +228,12 @@
 				<a class="color--hwite" href="mailto:georginaleeuwendal@gmail.com" style="text-decoration: underline;"><p><small class="color--hwite">georginaleeuwendal@gmail.com</small></p></a>
 			</div>
 		</div>
+		<div class="padding-tb--small"></div>
 	</footer>
 </main>
 	<!-- scripts -->
 	<script type="text/javascript" src="scripts/navbar.js"></script>
+	<script type="text/javascript" src="scripts/marquee.js"></script>
 	<!------ carousels ------>
 	<script type="text/javascript" src="scripts/glide.min.js"></script>
 	<script>
