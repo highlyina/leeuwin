@@ -199,6 +199,8 @@ nav {
 .padding-tb--large {padding-top: var(--gap-large) !important; padding-bottom: var(--gap-large) !important;}
 .padding-tb--reg {padding-top: var(--gap); padding-bottom: var(--gap);}
 
+.min-height {}
+
 .width--max-800 {max-width: 800px}
 .width--max-1200 {max-width: 1200px; margin-left: auto; margin-right: auto;}
 .width--min50 {min-width: 50% !important}
@@ -274,7 +276,7 @@ nav {
 		--gap: 1.5rem;
 		--font-size--glide-arrows: 3rem;
 	}
-	h1, .display__sans {font-size: 2.9rem;}
+	h1, .display__sans {font-size: 2.8rem;}
 	.display {font-size: 2.4rem;}
 	#contact a {font-size: 2rem;}
 	.nav--svg {max-height: 40px;}
@@ -299,4 +301,8 @@ nav {
 .marquee h3 {
 	white-space: nowrap;
 	text-transform: uppercase;
+}
+
+#bioai-reel {
+	max-width: 100%;
 }
