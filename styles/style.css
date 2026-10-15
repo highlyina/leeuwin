@@ -26,7 +26,7 @@ hr {height: 0; border: none; border-top: 1px solid var(--glblk);}
 img {width:100%;}
 
 /* # text formatting */
-h1 {font-size: calc(var(--p)*3.2); letter-spacing: -.08rem;}
+h1 {font-size: calc(var(--p)*3.1); letter-spacing: -.08rem;}
 h2 {font-size: calc(var(--p)*2.5);}
 h3 {font-size: calc(var(--p)*2); letter-spacing: -.042rem;}
 h4 {font-size: calc(var(--p)*1.55);}
@@ -96,9 +96,6 @@ nav {
 	padding: calc(var(--gap-large)*2) var(--gap);
 }
 
-.header-main h1 {
-	
-}
 
 #contact a {
 	background-image: url("../img/contact.svg");
@@ -271,18 +268,19 @@ nav {
 	#pfp {margin-bottom: var(--gap);}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
 	:root {
 		--p: 1rem;
 		--gap: 1.5rem;
 		--font-size--glide-arrows: 3rem;
 	}
-	h1, .display__sans {font-size: 3rem;}
+	h1, .display__sans {font-size: 2.9rem;}
 	.display {font-size: 2.4rem;}
 	#contact a {font-size: 2rem;}
 	.nav--svg {max-height: 40px;}
 	.G {max-height: 30px; margin-top: 5px;}
 	.p-large {font-size: calc(var(--p)*1.1);}
+	.btn__scrolltotop {display: none;}
 }
 
 @media (min-width: 1900px) {
